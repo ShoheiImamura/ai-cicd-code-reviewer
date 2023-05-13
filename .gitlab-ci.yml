@@ -4,6 +4,7 @@ stages:
 lint:
   stage: lint
   script:
+    - echo $CI_PROJECT_ID
     - apk add jq
     - |
       #!/bin/bash
